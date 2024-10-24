@@ -1,0 +1,113 @@
+/* Style général */
+body {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barre de navigation */
+header {
+    background-color: #292929;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    color: #FFD700;
+}
+
+/* Filtre à gauche */
+aside.filter {
+    background-color: #333;
+    padding: 20px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+
+aside.filter h3, aside.filter h4 {
+    color: #FFD700;
+}
+
+aside.filter ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside.filter ul li {
+    margin: 10px 0;
+}
+
+/* Grille des films */
+section.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 75%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.movie-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+.pagination a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #292929;
+    margin: 0 4px;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #444;
+}
